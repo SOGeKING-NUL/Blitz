@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js"
+    "dev": "node --loader ts-node/esm server.ts"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "@openrouter/ai-sdk-provider": "^1.2.5",
     "ai": "^5.0.99",
     "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@types/express": "^5.0.5",
